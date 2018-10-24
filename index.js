@@ -68,11 +68,17 @@ function equalButton() {
       numberResult = parseInt(num1) + parseInt(num2);
       break;
     case "−":
+      numberResult = parseInt(num1) - parseInt(num2);
+      break;
     case "×":
+      numberResult = parseInt(num1) * parseInt(num2);
+      break;
     case "÷":
+      numberResult = parseInt(num1) / parseInt(num2);
+      break;
   }
 
-  result.innerText = String(resultadoNumero);
+  result.innerText = String(numberResult);
 
   console.log(`equal: ${equal}`);
 }
