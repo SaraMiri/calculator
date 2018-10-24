@@ -10,7 +10,7 @@ let operator = "";
 function onClick(event) {
   if (event.target.tagName === "BUTTON") {
     const operating = event.target.innerText;
-    console.log(`pulsado un ${operating}`);
+    //console.log(`pulsado un ${operating}`);
 
     switch (operating) {
       case "0":
@@ -29,6 +29,7 @@ function onClick(event) {
       case "÷":
       case "−":
       case "×":
+        handleOperators(operating);
         break;
       case "∁":
         break;
@@ -41,6 +42,19 @@ function onClick(event) {
 }
 
 function handleNumbers(numberString) {
-  num1 = num1 + numberString;
-  result.innerText = num1;
+  if (operator === "") {
+    num1 = num1 + numberString;
+    result.innerText = num1;
+  } else {
+    num2 = num2 + numberString;
+    result.innerText = num2;
+  }
+
+  console.log(`num1: ${num1}`);
+  console.log(`num2: ${num2}`);
+}
+
+function handleOperators(operatorString) {
+  operator = operatorString;
+  console.log(`operator: ${operator}`);
 }
