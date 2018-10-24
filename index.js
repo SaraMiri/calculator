@@ -41,7 +41,6 @@ function onClick(event) {
 }
 
 function handleNumbers(numberString) {
-  num1 = numberString;
-  result.innerText = numberString;
-  console.log(`Num1: ${num1}`);
+  num1 = num1 + numberString;
+  result.innerText = num1;
 }
