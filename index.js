@@ -6,19 +6,40 @@ function onClick(event) {
   const operating = event.target.innerText;
   const result = document.querySelector(".result");
   result.innerText = operating;
-  
+
+  console.log(`pulsado un ${operating}`);
+
   switch (operating) {
+    case '∁':
+    //result.innerText = delete.result;
+    break;
+    case '0':
     case '1':
-      result.innerText <= 1;
-      break;
     case '2':
-      result.innerText = operating;
-      // expected output: "Mangoes and papayas are $2.79 a pound.";
-      case '3':
-      //result.innerText = operating;
-      break;
-    default:
-     // result.innerText = operating;
+    case '3':
+    case '4':
+    case '5':
+    case '6':
+    case '7':
+    case '8':
+    case '9':
+    
+    
+   // result.innerText = operating + result;
+    break;
+    case '+':
+    case '÷':
+    case '-':
+    case '=':
+    case '×':
+    
+   // result.innerText = operating + result;
+    break;
+    case '∁':
+    break;
+    case '←':
+    break;
+     
   }
 }
 }
