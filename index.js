@@ -1,6 +1,8 @@
 const container = document.querySelector(".container");
 container.addEventListener("click", onClick);
 
+const result = document.querySelector(".result");
+
 let num1 = "";
 let num2 = "";
 let operator = "";
@@ -8,7 +10,6 @@ let operator = "";
 function onClick(event) {
   if (event.target.tagName === "BUTTON") {
     const operating = event.target.innerText;
-    const result = document.querySelector(".result");
     console.log(`pulsado un ${operating}`);
 
     switch (operating) {
@@ -22,9 +23,7 @@ function onClick(event) {
       case "7":
       case "8":
       case "9":
-        result.innerText = operating;
-        num1 = operating;
-        console.log(`Num1: ${num1}`);
+        handleNumbers(operating);
         break;
       case "+":
       case "÷":
@@ -39,4 +38,10 @@ function onClick(event) {
         break;
     }
   }
+}
+
+function handleNumbers(numberString) {
+  num1 = numberString;
+  result.innerText = numberString;
+  console.log(`Num1: ${num1}`);
 }
