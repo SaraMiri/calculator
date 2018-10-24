@@ -27,7 +27,7 @@ function onClick(event) {
         break;
       case "+":
       case "÷":
-      case "-":
+      case "−":
       case "×":
         break;
       case "∁":
