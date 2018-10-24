@@ -35,6 +35,7 @@ function onClick(event) {
         operatorC();
         break;
       case "←":
+        arrow();
         break;
       case "=":
         equalButton();
@@ -89,4 +90,11 @@ function operatorC() {
   num2 = "";
   operator = "";
   result.innerText = "0";
+}
+
+function arrow() {
+  num1.slice(1);
+  num2 = num1.slice(1);
+  operator = num1.slice(1);
+  result.innerText = String();
 }
