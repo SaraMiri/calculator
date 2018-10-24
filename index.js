@@ -32,6 +32,7 @@ function onClick(event) {
         handleOperators(operating);
         break;
       case "∁":
+        operatorC();
         break;
       case "←":
         break;
@@ -76,9 +77,16 @@ function equalButton() {
     case "÷":
       numberResult = parseInt(num1) / parseInt(num2);
       break;
+    case "":
+      numberResult = num1;
   }
 
   result.innerText = String(numberResult);
+}
 
-  console.log(`equal: ${equal}`);
+function operatorC() {
+  num1 = "";
+  num2 = "";
+  operator = "";
+  result.innerText = "0";
 }
