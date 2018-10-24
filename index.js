@@ -93,8 +93,13 @@ function operatorC() {
 }
 
 function arrow() {
-  num1.slice(1);
-  num2 = num1.slice(1);
-  operator = num1.slice(1);
-  result.innerText = String();
+  if (operator === "") {
+    num1 = num1.slice(0, num1.length - 1);
+    result.innerText = num1;
+  } else {
+    num2 = num2.slice(0, num2.length - 1);
+    result.innerText = num2;
+  }
+
+  String();
 }
