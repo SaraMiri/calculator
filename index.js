@@ -36,6 +36,7 @@ function onClick(event) {
       case "←":
         break;
       case "=":
+        equalButton();
         break;
     }
   }
@@ -57,4 +58,21 @@ function handleNumbers(numberString) {
 function handleOperators(operatorString) {
   operator = operatorString;
   console.log(`operator: ${operator}`);
+}
+
+function equalButton() {
+  let numberResult;
+
+  switch (operator) {
+    case "+":
+      numberResult = parseInt(num1) + parseInt(num2);
+      break;
+    case "−":
+    case "×":
+    case "÷":
+  }
+
+  result.innerText = String(resultadoNumero);
+
+  console.log(`equal: ${equal}`);
 }
