@@ -94,12 +94,16 @@ function operatorC() {
 
 function arrow() {
   if (operator === "") {
-    num1 = num1.slice(0, num1.length - 1);
+    num1 = deleteLastCharFrom(num1);
     result.innerText = num1;
   } else {
-    num2 = num2.slice(0, num2.length - 1);
+    num2 = deleteLastCharFrom(num2);
     result.innerText = num2;
   }
 
-  String();
+  // TODO: Manexar borrado do ultimo caracter
+}
+
+function deleteLastCharFrom(numberString) {
+  return numberString.slice(0, numberString.length - 1);
 }
