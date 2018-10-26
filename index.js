@@ -96,10 +96,18 @@ function operatorC() {
 function arrow() {
   if (operator === "") {
     num1 = deleteLastCharFrom(num1);
-    result.innerText = num1;
+    if (num1 === "") {
+      result.innerText = "0";
+    } else {
+      result.innerText = num1;
+    }
   } else {
     num2 = deleteLastCharFrom(num2);
-    result.innerText = num2;
+    if (num2 === "") {
+      result.innerText = "0";
+    } else {
+      result.innerText = num2;
+    }
   }
 
   // TODO: Manexar borrado do ultimo caracter
