@@ -81,8 +81,9 @@ function equalButton() {
   }
 
   result.innerText = String(numberResult);
-
-  // TODO: LIMPAR O ESTADO
+  num1 = String(numberResult);
+  num2 = "";
+  operator = "";
 }
 
 function operatorC() {
