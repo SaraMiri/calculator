@@ -78,11 +78,11 @@ function equalButton() {
     case "÷":
       numberResult = parseInt(num1) / parseInt(num2);
       break;
-    case "":
-      numberResult = num1;
   }
 
   result.innerText = String(numberResult);
+
+  // TODO: LIMPAR O ESTADO
 }
 
 function operatorC() {
