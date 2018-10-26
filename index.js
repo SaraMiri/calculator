@@ -109,8 +109,6 @@ function arrow() {
       result.innerText = num2;
     }
   }
-
-  // TODO: Manexar borrado do ultimo caracter
 }
 
 function deleteLastCharFrom(numberString) {
